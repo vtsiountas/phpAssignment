@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-size: 14px;
+    padding: 115px 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('./images/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 650px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem; 
+}
+
+.red {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.green {
+    color: #1c721c;
+    background-color: #daf8d7;
+    border-color: #d0f5c6;
+}
+
+.form-content {
+    background: white;
+    border-radius: 10px;
+    padding: 50px 85px;
+}
+
+.form-title {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.chooseGender div {
+    display: inline-block;
+    text-align: center;
+}
+
+.chooseGender input[type="radio"] {
+  display: none;
+}
+
+.chooseGender input[type="radio"] + label {
+  cursor: pointer;
+
+}
+
+.chooseGender label {
+  display: block;
+  width: 100px;
+  height: 25px;
+  background: white;
+  border: 2px solid lightgrey;
+  color: grey;
+  padding: 10px;
+  margin: -1px 0 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.chooseGender input[type="radio"]:checked + label {
+  color: black;
+  font-weight: 1000;
+  border: 3px solid black;
+  box-shadow: 0px 0px 5px black;
+}
+
+
+.chooseGender input[type="radio"]:not(:checked):hover + label {
+  color: darkgray;
+  box-shadow: 0px 0px 5px black;
+}
+
+
+
+.agree label {
+    display: inline-block;
+}
+
+.agree {
+    display: inline-block;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 17px 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #97C4A3), var(--c2, #215C77) 51%, var(--c1, #97C4A3)) var(--x, 0)/ 200%;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    --x: 100%;
+}
+
+.admin-btns {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border: 2px solid whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #97C4A3), var(--c2, #215C77) 51%, var(--c1, #97C4A3)) var(--x, 0)/ 200%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.admin-btns:hover {
+    --x: 100%;
+}
+
+
+caption {
+    width: 100px;
+    height: 25px;
+    background: white;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: -1px 0 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 100px;
+}
+  
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+th:last-child {
+    border-top-right-radius: 20px;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+th:first-child {
+    border-top-left-radius: 20px;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    border-top: 1px solid transparent;
+}
+  
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd){
+    background-color: white;
+}
+  
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+      width: calc(100% - 40px);
+      max-width: 100%;
+    }
+}
